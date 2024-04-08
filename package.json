@@ -1,0 +1,56 @@
+{
+  "name": "vue3-gantt-component",
+  "private": false,
+  "version": "0.3.1",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/zhouruixin_0/vue3-gantt"
+  },
+  "main": "./dist/vue3-gantt-component.js",
+  "module": "./dist/vue3-gantt-component.umd.cjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/vue3-gantt-component.es.js",
+      "require": "./dist/vue3-gantt-component.umd.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "author": "ZRX",
+  "license": "MIT",
+  "description": "vue3甘特图",
+  "keywords": [
+    "vue3",
+    "Typescript",
+    "gantt",
+    "vue3-gantt",
+    "vue3-甘特图",
+    "甘特图",
+    "轻量级",
+    "轻量级甘特图"
+  ],
+  "scripts": {
+    "dev": "vite --port 9999",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.10",
+    "v3-drag-zoom": "^1.1.18",
+    "vite-plugin-libcss": "^1.1.1",
+    "vue": "^3.4.21",
+    "vue3-gantt-component": "0.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.5",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vite-plugin-dts": "^3.8.1",
+    "vue-tsc": "^2.0.6"
+  }
+}

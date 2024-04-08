@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "noImplicitAny": false, //关闭any提示
+    "useDefineForClassFields": true,
+    "suppressImplicitAnyIndexErrors":false,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "lib": ["ESNext", "DOM"],
+    "skipLibCheck": true,
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/package/*": ["./package/*"]
+    }
+  },
+  //需要编译的文件
+  "include": [
+    "package/**/*.ts",
+    "package/**/*.d.ts",
+    "package/**/*.tsx",
+    "package/**/*.vue"
+  ],
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "exclude": ["node_modules", "lib"]
+}
